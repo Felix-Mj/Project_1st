@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(3, 95, 233);
+            font-family: sans-serif;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 7px 10px;
+            border: 2px solid #fff;
+            background-color: rgb(3, 95, 233);
+        }
+
+        ::placeholder {
+            color: aliceblue;
+
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            margin-top: 6rem;
+        }
+
+        .d-f {
+            display: flex;
+        }
+
+        .form {
+            flex-direction: column;
+            /* overflow: hidden; */
+            gap: 20px;
+        }
+
+        .gap {
+            gap: 20px;
+        }
+
+
+        @media(max-width:600px) {
+            .gap {
+                flex-direction: column;
+            }
+        }
+
+        .reg {
+            width: min-content;
+            margin-left: 10rem;            
+            padding: 8.5px 35px;
+            background-color: #fff;
+            color: rgb(97, 155, 241);
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            font-size: 4rem;
+            line-height: 4rem;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        a {
+            margin-left: 9rem;
+            color: white;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./login.html" method="get">
+
+        <div class="body">
+            <div class="center">
+                <div class="border">
+                    <div class="form d-f">
+                        <div>
+                            <h1>Register</h1>
+                        </div>
+                        <div class="d-f gap">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="d-f ">
+                            <input class="pass" type="text" placeholder="Email Address">
+                        </div>
+                        <div class="d-f gap">
+                            <input type="text" placeholder="Phone Number">
+                            <input type="text" placeholder="Website">
+                        </div>
+                        <div class="d-f gap">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Re-type Password">
+                        </div>
+                        <div>
+                            <input class="reg" type="submit" value="Register">
+                        </div>
+                        <div>
+                            <a href="">Hosted with 💘 by Felix Mj</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -9,8 +9,11 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Login</title>
     <style>
+        input[type="submit"]{
+            cursor: pointer;
+        }
         body {
-            background-color: rgb(97, 155, 241);
+            background-color: rgb(3, 95, 233);
         }
 
         .img img {
@@ -29,9 +32,12 @@
             border: none;
             outline: none;
             color: white;
-            background-color: rgb(97, 155, 241);
-        }
+            background-color: rgb(3, 95, 233);
 
+        }
+        ::placeholder {
+            color: aliceblue;
+        }
         .user-name {
             border: 2px solid white;
             width: max-content;
@@ -57,6 +63,7 @@
         .anker{
             display: flex;
             justify-content: space-around;
+            align-items: center;
             margin-top: 2rem;
             margin-left: -10px;
 
@@ -64,13 +71,13 @@
         .anker a{
             text-decoration: none;
             cursor: pointer;          
-
+            color: aliceblue;
         }
         .forget{
-            color: rgb(192, 21, 21);
+            /* color: rgb(224, 149, 8); */
         }
         .signup{
-            color: rgb(15, 117, 15);
+            /* color: rgb(15, 117, 15); */
             text-transform: capitalize;
         }
 
@@ -80,7 +87,7 @@
 
 <body>
     <div class="center">
-        <form action="">
+        <form action="./index.html">
 
             <div class="img">
                 <img src="Images/1_2.png" alt="logo">
@@ -89,15 +96,15 @@
 
                 <div class="user-name">
                     <i class="far fa-user-circle icon"></i>
-                    <input type="text" placeholder="username">
+                    <input type="text" placeholder="Username">
 
                 </div>
                 <div class="user-name pass">
                     <i class="fas fa-unlock-alt icon"></i>
-                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="Password">
                 </div>
                 <div class="log">
-                    <input type="button" value="Login">
+                    <input type="submit" value="Login">
                 </div>
             </div>
             <div class="anker">
@@ -106,7 +113,7 @@
                     <a class="forget" href="#">Forget Password ??</a>
                 </div>
                 <div>
-                    <a class="signup" href="#">signup😍</a>
+                    <a class="signup" href="./signup.html">signup😍</a>
                 </div>
 
             </div>
