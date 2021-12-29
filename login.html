@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: rgb(97, 155, 241);
+        }
+
+        .img img {
+            width: 14rem;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border: none;
+            outline: none;
+            color: white;
+            background-color: rgb(97, 155, 241);
+        }
+
+        .user-name {
+            border: 2px solid white;
+            width: max-content;
+            padding: 5px 8px;
+        }
+
+        .pass {
+            margin: 20px 0px;
+        }
+
+        .icon {
+            color: white;
+            padding-right: 10px;
+        }
+
+        .log input {
+            padding: 8px 90px;
+            color: rgb(97, 155, 241);
+            background: #fff;
+            border: none;
+            outline: none;
+        }
+        .anker{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            margin-left: -10px;
+
+        }
+        .anker a{
+            text-decoration: none;
+            cursor: pointer;          
+
+        }
+        .forget{
+            color: rgb(192, 21, 21);
+        }
+        .signup{
+            color: rgb(15, 117, 15);
+            text-transform: capitalize;
+        }
+
+            
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <form action="">
+
+            <div class="img">
+                <img src="Images/1_2.png" alt="logo">
+            </div>
+            <div class="input-container">
+
+                <div class="user-name">
+                    <i class="far fa-user-circle icon"></i>
+                    <input type="text" placeholder="username">
+
+                </div>
+                <div class="user-name pass">
+                    <i class="fas fa-unlock-alt icon"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="log">
+                    <input type="button" value="Login">
+                </div>
+            </div>
+            <div class="anker">
+
+                <div>
+                    <a class="forget" href="#">Forget Password ??</a>
+                </div>
+                <div>
+                    <a class="signup" href="#">signup😍</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
